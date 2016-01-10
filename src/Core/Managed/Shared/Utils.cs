@@ -18,7 +18,7 @@
             {
                 return true;
             }
-#if !CORE_PCL
+#if !CORE_PCL && !CORE_PROFILE78
             return value.All(char.IsWhiteSpace);
 #else
             return string.IsNullOrWhiteSpace(value);

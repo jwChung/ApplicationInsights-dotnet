@@ -22,8 +22,8 @@ namespace Microsoft.ApplicationInsights.Extensibility.Implementation
         public const int MaxUrlLength = 2048;
         public const int MaxCommandNameLength = 2 * 1024;
 
-        private const RegexOptions SanitizeOptions = 
-#if WINRT || CORE_PCL
+        private const RegexOptions SanitizeOptions =
+#if WINRT || CORE_PCL || CORE_PROFILE78
                                                 RegexOptions.None;
 #else
                                                 RegexOptions.Compiled;

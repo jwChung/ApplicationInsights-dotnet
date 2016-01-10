@@ -2,7 +2,7 @@
 {
     using System;
     using System.Collections.Generic;
-#if CORE_PCL || NET45 || WINRT
+#if CORE_PCL || NET45 || WINRT || CORE_PROFILE78
     using System.Diagnostics.Tracing;
 #endif
     using System.Linq;

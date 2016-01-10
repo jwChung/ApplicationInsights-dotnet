@@ -16,7 +16,7 @@ namespace Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing
 
     using Implementation;
 
-#if WINRT || CORE_PCL || NET45
+#if WINRT || CORE_PCL || NET45 || CORE_PROFILE78
     using TaskEx = System.Threading.Tasks.Task;
 #endif
 
