@@ -14,7 +14,7 @@
     /// Subscriber to ETW Event source events, which sends data to other Senders (F5 and Portal).
     /// </summary>
     internal class DiagnosticsListener
-#if Wp80
+#if Wp80 || CORE_PROFILE78
  : IDisposable
 #else
         : EventListener
@@ -23,7 +23,7 @@
         private const long AllKeyword = -1;
 
         private readonly IList<IDiagnosticsSender> diagnosticsSenders = new List<IDiagnosticsSender>();
-#if !Wp80
+#if !Wp80 && !CORE_PROFILE78
         private HashSet<WeakReference> eventSources = new HashSet<WeakReference>();
 #endif
         private EventLevel logLevel = EventLevel.Error;
@@ -52,7 +52,7 @@
             set
             {
                 this.logLevel = value;
-#if !Wp80
+#if !Wp80 && !CORE_PROFILE78
                 HashSet<WeakReference> aliveEventSources = new HashSet<WeakReference>();
                 foreach (WeakReference s in this.eventSources)
                 {
@@ -84,13 +84,13 @@
             }
         }
 
-#if Wp80
+#if Wp80 || CORE_PROFILE78
         public void Dispose()
         {
         }
 
 #endif
-#if !Wp80
+#if !Wp80 && !CORE_PROFILE78
         protected override void OnEventWritten(EventWrittenEventArgs eventSourceEvent)
         {
             var metadata = new EventMetaData

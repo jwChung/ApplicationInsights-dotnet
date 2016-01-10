@@ -44,12 +44,25 @@
     <Compile Include="Extensibility\Implementation\External\Tags.cs" />
     <Compile Include="Extensibility\Implementation\External\UserContextData.cs" />
     <Compile Include="Extensibility\Implementation\Platform\PlatformImplementation.cs" />
+    <Compile Include="Extensibility\Implementation\Tracing\EventAttribute.cs" />
+    <Compile Include="Extensibility\Implementation\Tracing\EventKeywords.cs" />
+    <Compile Include="Extensibility\Implementation\Tracing\EventLevel.cs" />
+    <Compile Include="Extensibility\Implementation\Tracing\EventSource.cs" />
+    <Compile Include="Extensibility\Implementation\Tracing\EventSourceAttribute.cs" />
     <Compile Include="TimeSpanEx.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Threading.Tasks">
+      <HintPath>..\..\..\..\..\packages\Microsoft.Bcl.Async.1.0.168\lib\portable-net45+win8+wp8+wpa81\Microsoft.Threading.Tasks.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions">
+      <HintPath>..\..\..\..\..\packages\Microsoft.Bcl.Async.1.0.168\lib\portable-net45+win8+wp8+wpa81\Microsoft.Threading.Tasks.Extensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Net.Http">
       <HintPath>..\..\..\..\..\packages\Microsoft.Net.Http.2.2.29\lib\portable-net40+sl4+win8+wp71+wpa81\System.Net.Http.dll</HintPath>
       <Private>True</Private>

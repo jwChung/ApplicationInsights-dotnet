@@ -6,7 +6,7 @@
     using System.Diagnostics.CodeAnalysis;
     using System.Globalization;
     using System.IO;
-#if !Wp80
+#if !Wp80 && !CORE_PROFILE78
     using System.IO.Compression;
 #endif
     using System.Text;
@@ -32,7 +32,7 @@
         {
             get
             {
-#if !Wp80
+#if !Wp80 && !CORE_PROFILE78
                 return "gzip";
 #else
                 return null;
@@ -204,7 +204,7 @@
         /// </summary>
         private static Stream CreateCompressedStream(Stream stream)
         {
-#if !Wp80
+#if !Wp80 && !CORE_PROFILE78
             return new GZipStream(stream, CompressionMode.Compress);
 #else
             return stream;
