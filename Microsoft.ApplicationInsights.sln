@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Wrt81", "src\Core\Managed\Wrt81\Core.Wrt81.csproj", "{50368B2B-A526-460E-8AD9-AB2E7951DAB2}"
 EndProject
@@ -69,10 +69,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.NuGet.Beta", "src\Core
 		{B69CBB57-4D1F-4FBE-B4AB-FD87EDBEE12B} = {B69CBB57-4D1F-4FBE-B4AB-FD87EDBEE12B}
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Profile78", "src\Core\Managed\Profile78\Core.Profile78.csproj", "{D30A9500-810C-4D18-A2C8-D01D1D6D985C}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		src\Core\Managed\Shared\Shared.projitems*{d30a9500-810c-4d18-a2c8-d01d1d6d985c}*SharedItemsImports = 4
 		src\Core\Managed\Shared\Shared.projitems*{412659ca-49b0-4834-bfbf-8183055083c8}*SharedItemsImports = 4
-		Test\CoreSDK.Test\TestFramework\Shared\TestFramework.Shared.projitems*{9f9c3d52-abb9-461a-b1b6-a01bb5cecd93}*SharedItemsImports = 4
 		Test\CoreSDK.Test\Shared\Core.Shared.Tests.projitems*{30717095-904b-47b6-a76b-3d7a21f14e18}*SharedItemsImports = 4
 		src\Core\Managed\Shared\Shared.projitems*{862b97af-f620-43fd-9b65-7e5423f3b7e3}*SharedItemsImports = 4
 		src\Core\Managed\Shared\Shared.projitems*{3a820d7a-f63c-460d-b2bd-ddac9433b4e9}*SharedItemsImports = 4
@@ -81,7 +83,6 @@ Global
 		Test\CoreSDK.Test\Shared\Core.Shared.Tests.projitems*{6587b432-e16a-4d26-93e1-bf12449fdb32}*SharedItemsImports = 4
 		Test\CoreSDK.Test\TestFramework\Shared\TestFramework.Shared.projitems*{b3ad9230-7e7a-4c82-8a7e-f297eeef8bb8}*SharedItemsImports = 4
 		src\Core\Managed\Shared\Shared.projitems*{cd752cd2-6711-4ad7-b5c8-f8c23cf076b1}*SharedItemsImports = 4
-		src\Core\Managed\Shared\Shared.projitems*{50368b2b-a526-460e-8ad9-ab2e7951dab2}*SharedItemsImports = 4
 		Test\CoreSDK.Test\Shared\Core.Shared.Tests.projitems*{ff8678db-8ff0-4507-a793-2ff896fc7ad7}*SharedItemsImports = 4
 		src\Core\Managed\Shared\Shared.projitems*{c1aaa703-5e32-45c0-a69d-f46d1c659ae4}*SharedItemsImports = 13
 		Test\CoreSDK.Test\Shared\Core.Shared.Tests.projitems*{c4a0db5b-0988-4e04-b9b8-bcf3b0842000}*SharedItemsImports = 13
@@ -373,6 +374,26 @@ Global
 		{4D7638A1-2F34-4C6C-BCD2-D0990A4695E9}.Release|x64.Build.0 = Release|Any CPU
 		{4D7638A1-2F34-4C6C-BCD2-D0990A4695E9}.Release|x86.ActiveCfg = Release|Any CPU
 		{4D7638A1-2F34-4C6C-BCD2-D0990A4695E9}.Release|x86.Build.0 = Release|Any CPU
+		{D30A9500-810C-4D18-A2C8-D01D1D6D985C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D30A9500-810C-4D18-A2C8-D01D1D6D985C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D30A9500-810C-4D18-A2C8-D01D1D6D985C}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{D30A9500-810C-4D18-A2C8-D01D1D6D985C}.Debug|ARM.Build.0 = Debug|Any CPU
+		{D30A9500-810C-4D18-A2C8-D01D1D6D985C}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{D30A9500-810C-4D18-A2C8-D01D1D6D985C}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{D30A9500-810C-4D18-A2C8-D01D1D6D985C}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{D30A9500-810C-4D18-A2C8-D01D1D6D985C}.Debug|x64.Build.0 = Debug|Any CPU
+		{D30A9500-810C-4D18-A2C8-D01D1D6D985C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D30A9500-810C-4D18-A2C8-D01D1D6D985C}.Debug|x86.Build.0 = Debug|Any CPU
+		{D30A9500-810C-4D18-A2C8-D01D1D6D985C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D30A9500-810C-4D18-A2C8-D01D1D6D985C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D30A9500-810C-4D18-A2C8-D01D1D6D985C}.Release|ARM.ActiveCfg = Release|Any CPU
+		{D30A9500-810C-4D18-A2C8-D01D1D6D985C}.Release|ARM.Build.0 = Release|Any CPU
+		{D30A9500-810C-4D18-A2C8-D01D1D6D985C}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{D30A9500-810C-4D18-A2C8-D01D1D6D985C}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{D30A9500-810C-4D18-A2C8-D01D1D6D985C}.Release|x64.ActiveCfg = Release|Any CPU
+		{D30A9500-810C-4D18-A2C8-D01D1D6D985C}.Release|x64.Build.0 = Release|Any CPU
+		{D30A9500-810C-4D18-A2C8-D01D1D6D985C}.Release|x86.ActiveCfg = Release|Any CPU
+		{D30A9500-810C-4D18-A2C8-D01D1D6D985C}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -396,5 +417,6 @@ Global
 		{412659CA-49B0-4834-BFBF-8183055083C8} = {68CC2924-E162-44BE-8D7A-DBA385365585}
 		{1AD07F5F-80E4-4020-B944-EE20756E3B24} = {BED5EB47-4AB1-4387-98B6-83CC327D6D16}
 		{4D7638A1-2F34-4C6C-BCD2-D0990A4695E9} = {05ACA4F0-E560-4E7A-BF50-1C248DAAA0D2}
+		{D30A9500-810C-4D18-A2C8-D01D1D6D985C} = {68CC2924-E162-44BE-8D7A-DBA385365585}
 	EndGlobalSection
 EndGlobal
